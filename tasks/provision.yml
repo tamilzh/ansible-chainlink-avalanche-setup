@@ -89,17 +89,17 @@
 
       - name: Create chainlink directory
         file:
-          path: /root/.chainlink-rinkeby
+          path: /root/.chainlink-avalanche
           state: directory
 
       - name: Setting Chainlink wallet password
-        shell: echo {{ chainlink_wallet_pw | quote }} >> /root/.chainlink-rinkeby/.password
+        shell: echo {{ chainlink_wallet_pw | quote }} >> /root/.chainlink-avalanche/.password
       
       - name: Setting Chainlink api email
-        shell: echo {{ chainlink_api_email | quote }} >> /root/.chainlink-rinkeby/.api
+        shell: echo {{ chainlink_api_email | quote }} >> /root/.chainlink-avalanche/.api
 
       - name: Setting Chainlink api password
-        shell: echo {{ chainlink_api_pw | quote }} >> /root/.chainlink-rinkeby/.api
+        shell: echo {{ chainlink_api_pw | quote }} >> /root/.chainlink-avalanche/.api
 
       - name: Create docker compose directory
         file:
