@@ -1,7 +1,8 @@
 # reddev infrastructure automation repository
 Setup requirements:
-1. Get Vultr.com API key from https://my.vultr.com/settings/#settingsapi
-2. Create file at ~/.vultr.ini and fill in your API key like so:
+1. Ansible v2.9.9 or later
+2. Get Vultr.com API key from https://my.vultr.com/settings/#settingsapi
+3. Create file at ~/.vultr.ini and fill in your API key like so:
 ```
 [reddev]
 key = quertyuiop123456789
